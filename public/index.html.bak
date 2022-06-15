@@ -68,6 +68,7 @@
 </head>
 <body>
 <main id="main">
+    <!-- <textarea id="messages" cols="80" rows="25" disabled="true"></textarea> -->
     <ul id="messages">
         
     </ul>
