@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Messenger</title>
+    <style>
+        body {
+            background: #f1f1f1;
+            font-family: "MS Reference Sans Serif";
+        }
+
+        main {
+            width: 50%;
+            margin: 2em auto;
+            border: 1px solid #d3d3d3;
+            border-radius: 3px;
+            background: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        ul {
+            list-style: none;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        ul li {
+            text-align: left;
+        }
+
+        ul li.me strong {
+            color: blue;
+        }
+
+        ul li:hover .time {
+            display: inline;
+        }
+
+        ul li .time {
+            color: #666;
+            font-size: 0.6em;
+            display: none
+        }
+
+        label {
+            display: inline-block;
+            width: 5em;
+        }
+
+        #controls>p {
+            margin-bottom: 0;
+        }
+
+        #author {
+            width: 20%;
+        }
+
+        #content {
+            width: 57%;
+        }
+
+        #submit {
+            width: 10%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<main id="main">
+    <!-- <textarea id="messages" cols="80" rows="25" disabled="true"></textarea> -->
+    <ul id="messages">
+        
+    </ul>
+    <div id="controls">
+        <p>
+            <input id="author" type="text" placeholder="Enter name">
+            <input id="content" type="text" placeholder="Type some message">
+            <input id="submit" type="button" value="Send">
+        </p>
+    </div>
+</main>
+
+<script src="messenger.js"></script>
+</body>
+</html>
